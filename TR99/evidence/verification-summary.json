@@ -1,0 +1,47 @@
+{
+  "project": "TR99",
+  "evidence_type": "verification_summary",
+  "source": {
+    "repository": "https://github.com/leonnett/TR99",
+    "current_branch": "TR99/main",
+    "current_commit": "4ee630df9b0c4363e6febce734228c8a65b0c11a",
+    "documented_evidence_commit": "c9d487a",
+    "documented_evidence_branch": "TR99/tests/v1"
+  },
+  "fresh_audit_run": {
+    "status": "OBSERVED_NOT_CERTIFIED",
+    "date": "2026-09-01",
+    "cases": 50,
+    "solved_and_verified": "50/50",
+    "baseline_tokens": 3683190,
+    "optimized_tokens_including_off_context_processing": 13890,
+    "reduction": 0.9962288125239263,
+    "tokenizer": "heuristic",
+    "exact_tokenizer": false,
+    "certification": "NOT_CERTIFIED"
+  },
+  "source_documented_exact_tokenizer_run": {
+    "status": "SOURCE_DOCUMENTED",
+    "workload": "TR99-e2e-global-HOT-v1",
+    "cases": 50,
+    "solved_and_verified": "50/50",
+    "baseline_tokens": 2697290,
+    "optimized_tokens_including_off_context_processing": 8740,
+    "reported_reduction": 0.9967597107,
+    "reported_lower_bootstrap_bound_95": 0.9961547583,
+    "quality_delta": 0.0,
+    "quality_delta_ci95": [
+      0.0,
+      0.0
+    ],
+    "tokenizer": "tiktoken==0.14.0 / cl100k_base",
+    "exact_tokenizer": true,
+    "reported_label": "TR99-certified-workload",
+    "publication_interpretation": "This record is transcribed from the source verification document; the raw run artifact is not included here."
+  },
+  "boundaries": [
+    "Both records are scoped to the declared deterministic workload.",
+    "Neither record establishes a universal reduction for arbitrary agent tasks.",
+    "Certification requires a reproducible artifact, exact tokenizer, paired baseline, functional grader, and complete cost accounting."
+  ]
+}

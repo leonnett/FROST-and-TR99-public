@@ -1,0 +1,69 @@
+{
+  "project": "TR99",
+  "benchmark": "HTTP end-to-end global workload v1",
+  "status": "NOT_CERTIFIED_WORKLOAD",
+  "run_date": "2026-09-01",
+  "runtime": {
+    "python": "3.13",
+    "token_counter": "heuristic",
+    "exact_tokenizer": false
+  },
+  "source": {
+    "repository": "https://github.com/leonnett/TR99",
+    "branch": "TR99/main",
+    "commit": "4ee630df9b0c4363e6febce734228c8a65b0c11a"
+  },
+  "workload": {
+    "name": "TR99-e2e-global-HOT-v1",
+    "task_families": 5,
+    "runs": 50,
+    "health_check": true,
+    "indexing_check": true,
+    "code_search_check": true,
+    "all_runs_solved_and_verified": true,
+    "route_checks": {
+      "cold": {
+        "solved": true,
+        "verified": true,
+        "model_calls": 2
+      },
+      "warm": {
+        "solved": true,
+        "verified": true,
+        "model_calls": 1
+      },
+      "hot_runs": {
+        "solved": 50,
+        "verified": 50,
+        "model_calls": 0
+      }
+    }
+  },
+  "tokens": {
+    "baseline_total": 3683190,
+    "runtime_inference_total": 0,
+    "off_context_processed_total": 13890,
+    "all_runtime_processed_total": 13890,
+    "reduction_inference_only": 1.0,
+    "reduction_including_off_context_processing": 0.9962288125239263
+  },
+  "quality": {
+    "solved_runs": 50,
+    "verified_runs": 50,
+    "quality_delta": 0.0,
+    "quality_delta_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "certification": {
+    "eligible": false,
+    "label": "not-certified-workload",
+    "reason": "An exact pinned tokenizer is required for certification."
+  },
+  "limitations": [
+    "The fixture uses a deterministic model configuration and declared repeated HOT task families.",
+    "The result does not represent arbitrary COLD coding tasks.",
+    "The heuristic tokenizer result is observed, not certified."
+  ]
+}

@@ -1,0 +1,28 @@
+# Local and private runtime material
+.env
+.env.*
+!.env.example
+.tr99-data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Model and binary artifacts
+*.gguf
+*.bin
+*.dylib
+*.so
+*.app
+
+# Raw or potentially sensitive run material
+raw-outputs*.jsonl
+timing-samples*.jsonl
+guard-telemetry*.jsonl
+*.pem
+*.key
+*.secret
+
+# Operating-system and editor files
+.DS_Store
+.idea/
+.vscode/

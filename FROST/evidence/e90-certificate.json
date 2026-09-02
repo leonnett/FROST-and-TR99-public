@@ -1,0 +1,28 @@
+{
+  "project": "FROST",
+  "evidence_type": "bounded_quality_certificate",
+  "certificate": "FROST_MAC_V1_E90_E2E_50_100",
+  "status": "PASS",
+  "source": {
+    "repository": "https://github.com/leonnett/FROST",
+    "branch": "FROST/mac/v1",
+    "commit": "dc3d4e02f5887b6b7edb3c32a9531a76524f796a"
+  },
+  "scope": {
+    "domain": "python_mbpp",
+    "task_count": 50,
+    "minimum_task_count": 50,
+    "maximum_task_count": 100,
+    "independent_verifier_coverage": "50/50"
+  },
+  "paired_quality": {
+    "baseline_errors": 43,
+    "frost_errors": 0,
+    "observed_baseline_error_reduction": 1.0,
+    "negative_flips": 0,
+    "point_estimate": 1.0,
+    "lower_bootstrap_bound_95": 1.0,
+    "upper_bootstrap_bound_95": 1.0
+  },
+  "public_interpretation": "This is a scoped E90 certificate for the declared holdout, not a universal product claim."
+}

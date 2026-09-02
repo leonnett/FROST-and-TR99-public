@@ -1,0 +1,38 @@
+{
+  "project": "TR99",
+  "benchmark": "local component regression fixture v1",
+  "status": "OBSERVED",
+  "run_date": "2026-09-01",
+  "runtime": {
+    "python": "3.13",
+    "token_counter": "heuristic",
+    "exact_tokenizer": false
+  },
+  "source": {
+    "repository": "https://github.com/leonnett/TR99",
+    "branch": "TR99/main",
+    "commit": "4ee630df9b0c4363e6febce734228c8a65b0c11a"
+  },
+  "retrieval_component": {
+    "cases": 3,
+    "baseline_tokens_per_case": 325,
+    "selected_tokens_per_case": 175,
+    "observed_reduction": 0.46153846153846156,
+    "interpretation": "Selected context was smaller than the complete local fixture in all three component probes."
+  },
+  "deterministic_replay": {
+    "route": "HOT",
+    "solved": true,
+    "verified": true,
+    "model_calls": 0,
+    "runtime_inference_tokens": 0,
+    "observed_reduction": 0.952,
+    "certification": "NOT_CERTIFIED",
+    "certification_reason": "The component probe is not a paired product evaluation and uses a heuristic tokenizer."
+  },
+  "limitations": [
+    "The retrieval number compares a selected fixture slice with the complete fixture only.",
+    "The replay number covers a deterministic component path, not arbitrary agent tasks.",
+    "Neither component result is an end-to-end product certification."
+  ]
+}

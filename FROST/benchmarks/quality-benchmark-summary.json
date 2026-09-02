@@ -1,0 +1,33 @@
+{
+  "project": "FROST",
+  "benchmark": "Mac v1 bounded paired quality benchmark",
+  "status": "PASS",
+  "scope": "FROST_MAC_V1_E90_E2E_50_100",
+  "source": {
+    "repository": "https://github.com/leonnett/FROST",
+    "branch": "FROST/mac/v1",
+    "commit": "dc3d4e02f5887b6b7edb3c32a9531a76524f796a"
+  },
+  "workload": {
+    "domain": "python_mbpp",
+    "paired_cases": 50,
+    "allowed_task_count": 378,
+    "independent_verifier_coverage": "50/50"
+  },
+  "quality": {
+    "baseline_errors": 43,
+    "frost_errors": 0,
+    "observed_baseline_error_reduction": 1.0,
+    "negative_flips": 0,
+    "point_estimate": 1.0,
+    "paired_bootstrap_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "interpretation": {
+    "result": "PASS",
+    "statement": "The bounded E90 quality contract passed for the declared 50-case holdout, with a 100% reduction in observed baseline errors.",
+    "generalization": "This result is scoped to the declared holdout."
+  }
+}
