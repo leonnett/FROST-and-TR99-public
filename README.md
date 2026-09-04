@@ -3,6 +3,8 @@
 This repository is a public evidence collection for two separate technology
 projects: **FROST** and **TR99**.
 
+These research materials are from **The Mythos Company**.
+
 It is prepared for external review, including accelerator and partner review.
 The collection contains benchmark summaries, evidence records, scope notes, and
 source provenance. It intentionally does not contain source code, model
