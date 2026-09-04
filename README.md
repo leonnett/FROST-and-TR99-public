@@ -15,15 +15,16 @@ implementation documentation.
 
 | Project | Short description | Public material |
 | --- | --- | --- |
-| [FROST](FROST/) | An evidence-driven AI runtime optimization project focused on measured, hardware-aware workload results. | Mac v1 quality evidence, performance probes, and release-gate status. |
+| [FROST](FROST/) | An evidence-driven AI runtime optimization project focused on measured, hardware-aware workload results. | Mac v1 E99 quality evidence and S200 performance evidence. |
 | [TR99](TR99/) | An evidence-driven runtime evaluation project focused on context efficiency in agent workloads. | Component measurements, HTTP end-to-end evidence, and certification boundaries. |
 
 ## Headline evidence
 
 ### FROST
 
-- A bounded Mac v1 E90 quality certificate reports **50 paired tasks**, **43 baseline errors**, **0 FROST errors**, **0 negative flips**, and **50/50 independent verifier coverage** — a **100% reduction in observed baseline errors**.
-- The guarded performance probe is recorded as **experimental**: 640 physical output tokens across four measured requests at 51.48 aggregate tokens per second.
+- The Mac v1 runtime 2 evidence records a formal **E99 PASS** across **378 paired tasks**, with **321 baseline errors**, **1 FROST error**, **0 negative flips**, and **378/378 independent verifier coverage**.
+- The measured error reduction is **99.6885%**, with a **99.0415% lower 95% paired-bootstrap bound**.
+- The sustained **S200** benchmark is **PASS**: 687.4 seconds, 20 requests, 368,640 physical output tokens, and 536.27 aggregate tokens per second.
 
 ### TR99
 

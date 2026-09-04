@@ -1,12 +1,12 @@
 # FROST benchmarks
 
-These records summarize measured FROST Mac v1 probes and the bounded quality
-benchmark.
+These records summarize the measured FROST Mac v1 runtime 2 E99 and S200
+benchmarks.
 
 | Record | Status | Meaning |
 | --- | --- | --- |
-| [mac-v1-performance-summary.json](mac-v1-performance-summary.json) | `EXPERIMENTAL` | Short guarded probe and native exploratory measurements. |
-| [quality-benchmark-summary.json](quality-benchmark-summary.json) | `PASS` | Bounded paired quality benchmark used by the Mac v1 E90 certificate. |
+| [e99-benchmark-summary.json](e99-benchmark-summary.json) | `PASS` | Full paired quality benchmark across the declared 378-task holdout. |
+| [s200-benchmark-summary.json](s200-benchmark-summary.json) | `PASS` | Sustained performance benchmark across the declared 20-request run. |
 
 Raw outputs and machine-local telemetry are intentionally excluded from this
 public collection.

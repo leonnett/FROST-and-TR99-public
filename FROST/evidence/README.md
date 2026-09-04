@@ -1,9 +1,9 @@
 # FROST evidence
 
-The public evidence set contains a bounded quality certificate and a concise
-publication status record for external review.
+The public evidence set contains the E99 quality certificate and S200
+performance certificate for external review.
 
-- [`e90-certificate.json`](e90-certificate.json) records the bounded Mac v1
+- [`e99-certificate.json`](e99-certificate.json) records the full paired
   quality result.
-- [`release-gate-status.json`](release-gate-status.json) records the public
-  publication status.
+- [`s200-certificate.json`](s200-certificate.json) records the sustained
+  performance result.

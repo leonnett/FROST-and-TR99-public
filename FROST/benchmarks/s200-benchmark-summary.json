@@ -1,0 +1,29 @@
+{
+  "project": "FROST",
+  "benchmark": "Mac v1 runtime 2 sustained S200 benchmark",
+  "status": "PASS",
+  "source": {
+    "repository": "https://github.com/leonnett/FROST",
+    "branch": "FROST/mac/v1",
+    "commit": "aa099a9b4258cb7c64e7e48e48a2a0f139ed0605"
+  },
+  "platform": {
+    "architecture": "Apple Silicon",
+    "chip": "Apple M5",
+    "memory_gib": 16,
+    "operating_system": "macOS"
+  },
+  "measurement": {
+    "duration_seconds": 687.4130900423042,
+    "requests": 20,
+    "physical_output_tokens": 368640,
+    "aggregate_output_tokens_per_second": 536.2714288395547,
+    "mean_output_tokens_per_second": 548.5444898208311,
+    "minimum_rolling_output_tokens_per_second": 307.2,
+    "peak_process_rss_gib": 0.7400000095367432,
+    "thermal_state_counts": {
+      "fair": 20
+    }
+  },
+  "interpretation": "The sustained S200 benchmark passed under the declared measurement contract."
+}

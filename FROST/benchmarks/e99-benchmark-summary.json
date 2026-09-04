@@ -1,0 +1,26 @@
+{
+  "project": "FROST",
+  "benchmark": "Mac v1 runtime 2 formal E99 quality benchmark",
+  "status": "PASS",
+  "source": {
+    "repository": "https://github.com/leonnett/FROST",
+    "branch": "FROST/mac/v1",
+    "commit": "aa099a9b4258cb7c64e7e48e48a2a0f139ed0605"
+  },
+  "workload": {
+    "domain": "python_mbpp",
+    "paired_tasks": 378,
+    "independent_verifier_coverage": "378/378",
+    "negative_flips": 0
+  },
+  "quality": {
+    "baseline_errors": 321,
+    "frost_errors": 1,
+    "observed_error_reduction": 0.9968847352024922,
+    "observed_error_reduction_percent": 99.6885,
+    "paired_bootstrap_replicates": 10000,
+    "lower_bound_95": 0.9904153354632588,
+    "upper_bound_95": 1.0
+  },
+  "interpretation": "The formal E99 quality contract passed for the declared 378-task holdout."
+}

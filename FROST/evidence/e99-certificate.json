@@ -1,0 +1,25 @@
+{
+  "project": "FROST",
+  "evidence_type": "formal_quality_certificate",
+  "certificate": "FROST_MAC_V1_E99_MBPP_378",
+  "status": "PASS",
+  "source": {
+    "repository": "https://github.com/leonnett/FROST",
+    "branch": "FROST/mac/v1",
+    "commit": "aa099a9b4258cb7c64e7e48e48a2a0f139ed0605"
+  },
+  "scope": {
+    "domain": "python_mbpp",
+    "paired_tasks": 378,
+    "independent_verifier_coverage": "378/378",
+    "negative_flips": 0
+  },
+  "paired_quality": {
+    "baseline_errors": 321,
+    "frost_errors": 1,
+    "error_reduction_percent": 99.6885,
+    "lower_bootstrap_bound_95_percent": 99.0415,
+    "paired_bootstrap_replicates": 10000
+  },
+  "public_interpretation": "Formal E99 passed for the declared 378-task holdout."
+}
